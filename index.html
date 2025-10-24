@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="page-title">دليل فعاليات المدينة - الرئيسية</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet"> <!-- Removed extra spaces -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="home.html">
+                <img src="assets/logo.png" alt="شعار المجلة" class="logo me-2">
+                 <span id="navbar-brand-text">دليل فعاليات المدينة</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="home.html" id="nav-home">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html" id="nav-all-events">كل الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html" id="nav-about">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html" id="nav-contact">اتصل بنا</a>
+                    </li>
+                </ul>
+                
+                <ul class="navbar-nav ms-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 lang-switcher" href="#" id="langToggle" title="تبديل اللغة / Switch Language">
+                            <img src="assets/En.png" alt="English" class="flag-icon flag-en">
+                            <img src="assets/ar.png" alt="العربية" class="flag-icon flag-ar">
+                        </a>
+                    </li>
+                </ul>
+    
+            </div> 
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="text-center">
+                <h1 id="hero-title">اكتشف أفضل الفعاليات في مدينتك</h1>
+                <p class="lead" id="hero-subtitle">منصتك الأولى لمتابعة الأحداث والفعاليات المحلية</p>
+                <div class="team-ids">
+                    <strong id="team-ids-label">المشروع من تطوير الطالب:</strong>
+                    <div class="mt-2" id="team-id-value">
+                        jamal_191763
+                    </div>
+                    <div class="mt-2" id="team-id-value">
+                        Faisal_302786
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <main class="container my-5">
+        <section id="featured-events" class="mb-5">
+            <div class="section-header">
+                <h2 id="featured-events-title">فعاليات بارزة هذا الأسبوع</h2>
+                <p id="featured-events-desc">أبرز الفعاليات التي لا يجب تفويتها</p>
+            </div>
+            <div class="slider-container">
+                <div class="slider-wrapper" id="slider">
+                    <div class="slide">
+                        <div class="event-featured-card">
+                            <div class="event-featured-img" style="background-image: url('assets/national-festival.jpg');">
+                                <span class="event-badge" style="background: #ec4899; color: white;" id="badge-culture">ثقافة</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h3 class="event-title" id="event1-title">مهرجان المسرح الوطني</h3>
+                                <p class="event-meta"><i class="fa-regular fa-calendar"></i> <span id="event1-date">15 أكتوبر 2025</span> | <i class="fa-solid fa-location-dot"></i> <span id="event1-location">المسرح الوطني</span></p>
+                                <p id="event1-description">عروض مسرحية عالمية ومحلية في أكبر احتفالية ثقافية هذا العام.</p>
+                                <a href="event.html?id=1" class="btn btn-primary mt-3" id="event1-details-btn">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="event-featured-card">
+                            <div class="event-featured-img" style="background-image: url('  https://via.placeholder.com/800x400/f59e0b/ffffff?text=حفل+موسيقي');">
+                                <span class="event-badge" style="background: #4facfe; color: white;" id="badge-music">موسيقى</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h3 class="event-title" id="event2-title">ليلة موسيقية تحت النجوم</h3>
+                                <p class="event-meta"><i class="fa-regular fa-calendar"></i> <span id="event2-date">18 أكتوبر 2025</span> | <i class="fa-solid fa-location-dot"></i> <span id="event2-location">الحديقة العامة</span></p>
+                                <p id="event2-description">حفل موسيقي مميز يجمع أفضل الفنانين المحليين في أجواء ساحرة.</p>
+                                <a href="event.html?id=2" class="btn btn-primary mt-3" id="event2-details-btn">التفاصيل</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="event-featured-card">
+                             <div class="event-featured-img" style="background-image: url('  https://via.placeholder.com/800x400/43e97b/1e293b?text=كرنفال+عائلي');">
+                                <span class="event-badge" style="background: #43e97b; color: #1e293b;" id="badge-family">عائلي</span>
+                            </div>
+                            <div class="card-body p-4">
+                                <h3 class="event-title" id="event3-title">كرنفال الأسرة السعيدة</h3>
+                                <p class="event-meta"><i class="fa-regular fa-calendar"></i> <span id="event3-date">20 أكتوبر 2025</span> | <i class="fa-solid fa-location-dot"></i> <span id="event3-location">ملاهي المدينة</span></p>
+                                <p id="event3-description">يوم كامل من المرح والألعاب والأنشطة الترفيهية لجميع أفراد العائلة.</p>
+                                <a href="event.html?id=3" class="btn btn-primary mt-3" id="event3-details-btn">ال(details)</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="prevBtn"><i class="fa-solid fa-arrow-right"></i></button>
+                    <button class="slider-btn" id="nextBtn"><i class="fa-solid fa-arrow-left"></i></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="categories" class="category-section">
+            <div class="section-header">
+                <h2 id="categories-title">تصنيفات الفعاليات</h2>
+                <p id="categories-link-p">اختر الفئة التي تهمك أو <a href="events.html" id="categories-link">شاهد الكل</a></p>
+            </div>
+            <div class="text-center">
+                <span class="category-badge category-culture" data-filter="culture" id="badge-culture-full">🎭 <span id="badge-culture-text">ثقافة</span></span>
+                <span class="category-badge category-sports" data-filter="sports" id="badge-sports-full">⚽ <span id="badge-sports-text">رياضة</span></span>
+                <span class="category-badge category-music" data-filter="music" id="badge-music-full">🎵 <span id="badge-music-text">موسيقى</span></span>
+                <span class="category-badge category-family" data-filter="family" id="badge-family-full">👨‍👩‍👧‍👦 <span id="badge-family-text">عائلي</span></span>
+                <span class="category-badge category-food" data-filter="food" id="badge-food-full">🍽️ <span id="badge-food-text">طعام</span></span>
+                <span class="category-badge category-tech" data-filter="tech" id="badge-tech-full">💻 <span id="badge-tech-text">تقنية</span></span>
+                <span class="category-badge category-all" data-filter="all" id="badge-all-full">✨ <span id="badge-all-text">الكل</span></span>
+            </div>
+        </section>
+
+        <section id="latest-events">
+            <div class="section-header">
+                <h2 id="latest-events-title">أحدث الفعاليات</h2>
+                <p id="latest-events-desc">اكتشف أحدث ما تم إضافته من فعاليات</p>
+            </div>
+            <div class="row" id="eventsGrid">
+                <div class="col-lg-4 col-md-6 event-item" data-category="culture">
+                    <div class="event-card">
+                        <div class="event-card-img" style="background-image: url('  https://via.placeholder.com/400x220/667eea/ffffff?text=معرض+كتب');">
+                            <div class="event-date-badge" id="event4-date-badge">22 أكت</div>
+                        </div>
+                        <div class="event-card-body">
+                            <span class="badge" style="background-color: #667eea;" id="event4-badge">ثقافة</span>
+                            <h4 class="event-title mt-2" id="event4-title">معرض الكتاب السنوي</h4>
+                            <p class="event-meta"><i class="fa-solid fa-location-dot"></i> <span id="event4-location">مركز المؤتمرات</span></p>
+                            <p class="event-description" id="event4-description">أكبر معرض للكتب والإصدارات الجديدة يجمع دور النشر المحلية والعالمية.</p>
+                            <a href="event.html?id=4" class="btn btn-outline-primary btn-sm" id="event4-more-btn">المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-4 footer-section">
+                    <h5 id="footer-title">دليل فعاليات المدينة</h5>
+                    <p id="footer-desc">منصتك لاستكشاف وتجربة أفضل ما في مدينتك. نحن نجمع لك الفعاليات لنجعل حياتك أكثر متعة.</p>
+                </div>
+                <div class="col-md-4 mb-4 footer-section">
+                    <h5 id="footer-quick-links">روابط سريعة</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="home.html" class="text-white text-decoration-none" id="footer-nav-home">الرئيسية</a></li>
+                        <li><a href="events.html" class="text-white text-decoration-none" id="footer-nav-all-events">كل الفعاليات</a></li>
+                        <li><a href="about.html" class="text-white text-decoration-none" id="footer-nav-about">عن الدليل</a></li>
+                        <li><a href="contact.html" class="text-white text-decoration-none" id="footer-nav-contact">اتصل بنا</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-4 footer-section">
+                    <h5 id="footer-follow-us">تابعنا</h5>
+                    <p id="footer-follow-us-p">ابق على تواصل معنا عبر شبكات التواصل الاجتماعي.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center border-top border-secondary pt-3 mt-3">
+                <p id="footer-copyright">&copy; 2025 دليل فعاليات المدينة. جميع الحقوق محفوظة.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <button id="scrollToTopBtn" class="btn btn-primary rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script> 
+    <script src="assets/js/main.js"></script> 
+</body>
+</html>

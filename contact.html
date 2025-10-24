@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>اتصل بنا - دليل فعاليات المدينة</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="شعار المجلة" class="logo me-2">
+                 دليل فعاليات المدينة 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">كل الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 lang-switcher" href="#" id="langToggle" title="تبديل اللغة / Switch Language">
+                            <img src="assets/En.png" alt="English" class="flag-icon flag-en">
+                            <img src="assets/ar.png" alt="العربية" class="flag-icon flag-ar">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <header class="hero-section">
+        <div class="container hero-content text-center">
+            <h1>تواصل معنا</h1>
+            <p class="lead">نحن هنا للإجابة على استفساراتك واقتراحاتك</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="card p-4 p-md-5 border-0 shadow-sm">
+                    <div class="section-header mt-0 mb-4">
+                        <h2>أرسل لنا رسالة</h2>
+                    </div>
+                    
+                    <div id="formAlert" style="display: none;"></div>
+
+                    <form id="contactForm" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">الاسم الكامل</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">البريد الإلكتروني</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">رسالتك</label>
+                            <textarea class="form-control" id="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">إرسال الرسالة</button>
+                    </form>
+
+                    <div class="text-center mt-5">
+                        <h4>معلومات تواصل بديلة</h4>
+                        <p>يمكنك التواصل معنا مباشرة عبر:</p>
+                        <p><strong>البريد الإلكتروني:</strong> <a href="mailto:info@cityevents.com">info@cityevents.com</a></p>
+                        <div class="social-links justify-content-center">
+                             <a href="#" class="bg-dark"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#" class="bg-dark"><i class="fab fa-twitter"></i></a>
+                             <a href="#" class="bg-dark"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <button id="scrollToTopBtn" class="btn btn-primary rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

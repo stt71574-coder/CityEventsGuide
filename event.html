@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الفعالية - دليل فعاليات المدينة</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="شعار المجلة" class="logo me-2">
+                 دليل فعاليات المدينة 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">كل الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 lang-switcher" href="#" id="langToggle" title="تبديل اللغة / Switch Language">
+                            <img src="assets/En.png" alt="English" class="flag-icon flag-en">
+                            <img src="assets/ar.png" alt="العربية" class="flag-icon flag-ar">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>  <main class="container my-5">
+        <div class="row" id="event-details-container">
+            <div class="col-lg-8">
+                <article>
+                    <img id="eventImage" src="" class="img-fluid rounded mb-4 shadow-lg" alt="صورة الفعالية">
+                    <h1 id="eventTitle" class="event-title mb-3"></h1>
+                    <div class="event-meta mb-4 p-3 bg-light rounded border">
+                        <span><i class="fa-regular fa-calendar text-primary"></i> <strong id="eventDate"></strong></span>
+                        <span class="mx-3">|</span>
+                        <span><i class="fa-solid fa-location-dot text-primary"></i> <strong id="eventLocation"></strong></span>
+                    </div>
+                    <p id="eventDescription" class="lead"></p>
+                    
+                    <div class="my-4">
+                        <button class="btn btn-primary"><i class="fa-regular fa-calendar-plus me-2"></i> أضف للتقويم</button>
+                        <button class="btn btn-secondary"><i class="fa-solid fa-share-alt me-2"></i> شارك الفعالية</button>
+                    </div>
+                </article>
+            </div>
+            <div class="col-lg-4">
+                <aside>
+                    <h4 class="mb-4">فعاليات أخرى</h4>
+                    </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <button id="scrollToTopBtn" class="btn btn-primary rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>كل الفعاليات - دليل فعاليات المدينة</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.rtl.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/logo.png" alt="شعار المجلة" class="logo me-2">
+                 دليل فعاليات المدينة 
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">الرئيسية</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="events.html">كل الفعاليات</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">عن الدليل</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">اتصل بنا</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ms-lg-2">
+                    <li class="nav-item">
+                        <a class="nav-link px-2 lang-switcher" href="#" id="langToggle" title="تبديل اللغة / Switch Language">
+                            <img src="assets/En.png" alt="English" class="flag-icon flag-en">
+                            <img src="assets/ar.png" alt="العربية" class="flag-icon flag-ar">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="hero-section">
+        <div class="container hero-content text-center">
+            <h1>استكشف كل الفعاليات</h1>
+            <p class="lead">ابحث وفلتر لتجد الفعالية المثالية لك</p>
+        </div>
+    </header>
+
+    <main class="container my-5">
+        <section class="filter-toolbar">
+            <div class="row g-3">
+                <div class="col-md-6">
+                    <input type="text" id="searchInput" class="form-control" placeholder="ابحث بالاسم أو المكان...">
+                </div>
+                <div class="col-md-3">
+                    <select id="categoryFilter" class="form-select">
+                        <option value="">كل التصنيفات</option>
+                        <option value="culture">ثقافة</option>
+                        <option value="sports">رياضة</option>
+                        <option value="music">موسيقى</option>
+                        <option value="family">عائلي</option>
+                        <option value="food">طعام</option>
+                        <option value="tech">تقنية</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <input type="date" id="dateFilter" class="form-select">
+                </div>
+            </div>
+        </section>
+
+        <div class="row" id="eventsGrid">
+            <div class="col-lg-4 col-md-6 event-item" data-category="culture">
+                <div class="event-card">
+                    <div class="event-card-img" style="background-image: url('  https://via.placeholder.com/400x220/667eea/ffffff?text=معرض+كتب');">
+                        <div class="event-date-badge" id="event4-date-badge">22 أكت</div>
+                    </div>
+                    <div class="event-card-body">
+                        <span class="badge" style="background-color: #667eea;" id="event4-badge">ثقافة</span>
+                        <h4 class="event-title mt-2" id="event4-title">معرض الكتاب السنوي</h4>
+                        <p class="event-meta"><i class="fa-solid fa-location-dot"></i> <span id="event4-location">مركز المؤتمرات</span></p>
+                        <p class="event-description" id="event4-description">أكبر معرض للكتب والإصدارات الجديدة يجمع دور النشر المحلية والعالمية.</p>
+                        <a href="event.html?id=4" class="btn btn-outline-primary btn-sm" id="event4-more-btn">المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="footer">
+        </footer>
+
+    <button id="scrollToTopBtn" class="btn btn-primary rounded-circle"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
